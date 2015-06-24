@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/close.png</file>
+        <file>images/copy.png</file>
+        <file>images/openfile.png</file>
+        <file>images/save.png</file>
+        <file>images/paste.png</file>
+        <file>images/cut.png</file>
+        <file>images/info.png</file>
+        <file>images/visit.png</file>
+        <file>images/undo.png</file>
+        <file>images/redo.png</file>
+        <file>images/hist.png</file>
+        <file>images/settings.png</file>
+        <file>images/next.png</file>
+        <file>images/previous.png</file>
+        <file>images/replace.png</file>
+        <file>images/convert.png</file>
+        <file>images/lctouc.png</file>
+        <file>images/uctolc.png</file>
+        <file>images/full.png</file>
+        <file>images/normal.png</file>
+        <file>images/sort.png</file>
+        <file>images/find.png</file>
+        <file>images/main.png</file>
+    </qresource>
+</RCC>
+
