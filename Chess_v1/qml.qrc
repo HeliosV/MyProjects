@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ChessBoard.qml</file>
+        <file>GameWindow.qml</file>
+        <file>images/white/P.png</file>
+        <file>images/black/p.png</file>
+        <file>images/white/R.png</file>
+        <file>images/black/r.png</file>
+        <file>images/white/N.png</file>
+        <file>images/black/n.png</file>
+        <file>images/white/B.png</file>
+        <file>images/black/b.png</file>
+        <file>images/white/Q.png</file>
+        <file>images/black/q.png</file>
+        <file>images/white/K.png</file>
+        <file>images/black/k.png</file>
+        <file>ChessFigures.qml</file>
+        <file>ChessFiguresModel.qml</file>
+        <file>LoadedGame.qml</file>
+    </qresource>
+</RCC>
