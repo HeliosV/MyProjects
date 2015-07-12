@@ -18,6 +18,8 @@ public:
     Q_INVOKABLE QString read();
     Q_INVOKABLE bool write(const QString& data);
     Q_INVOKABLE bool clear();
+    Q_INVOKABLE QString readCurrentLine(int i_index);
+    Q_INVOKABLE int moveCount();
 
     QString source() { return mSource; }
 

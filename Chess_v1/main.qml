@@ -90,6 +90,6 @@ ApplicationWindow {
 
     function loadGame(){
         var component = Qt.createComponent("LoadedGame.qml");
-        win = component.createObject(mainRec);
+        win = component.createObject(mainRec);       
     }
 }

@@ -13,8 +13,8 @@ ApplicationWindow {
     title: qsTr("Chess Game")
 
     FileIO {
-        id: gameFile
-        source: "saved_game.txt"
+        id: modelFile
+        source: "saved_model.txt"
         onError: console.log(msg)
     }
 
@@ -28,8 +28,10 @@ ApplicationWindow {
             MenuItem {
                 text: qsTr("&Save Game")
                 onTriggered: {
-                    gameFile.clear();
-                    gameFile.write(chessFigures.currentModel);
+                    modelFile.clear();
+                    var i;
+                    for (i = 0; i < chessFigures.modelContainer.length; ++i)
+                        modelFile.write(chessFigures.modelContainer[i]);
                 }
             }
         }
