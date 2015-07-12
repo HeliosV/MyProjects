@@ -29,6 +29,14 @@ Grid {
         RotationAnimation { duration: 1000; direction: RotationAnimation.Counterclockwise }
     }
 
+    Timer {
+        id: rotateTimer
+        interval: 1000;
+        running: false;
+        repeat: false;
+        onTriggered: rotateDesk();
+    }
+
     Component.onCompleted:
     {
         var i;
@@ -85,12 +93,9 @@ Grid {
                 states: [
                     State {
                         PropertyChanges { target: figure; rotation: 180 }
-                        when: figureRotated
+                        when: chessGrid.rotated
                     }
                 ]
-                transitions: Transition {
-                    RotationAnimation { duration: 1000; direction: RotationAnimation.Counterclockwise }
-                }
             }
             MouseArea{
                 id: clickArea
@@ -98,6 +103,12 @@ Grid {
                 onClicked: makeMoveTo(index)
             }
         }
+    }
+
+    function rotateDesk()
+    {
+        chessGrid.rotated = !chessGrid.rotated ? true : false;
+        figureRotated = !figureRotated ? true : false;
     }
 
     property int getIndex: 0;
@@ -146,8 +157,7 @@ Grid {
                     //                    if (isCheck(currentFigure, moveIndex))
                     //                        messageDialog.visible = true;
                     currentFigure = " ";
-                    chessGrid.rotated = !chessGrid.rotated ? true : false;
-                    figureRotated = !figureRotated ? true : false;
+                    //rotateTimer.start();
                 }
                 else
                     return;

@@ -18,15 +18,6 @@ Grid {
 
             property int rowIndex:Math.floor(index/8)
             color: index%2?(rowIndex%2?brightChessBoxColor:darkChessBoxColor):(rowIndex%2?darkChessBoxColor:brightChessBoxColor)
-
-//            states: State {
-//                name: "rotated"
-//                PropertyChanges { target: chessGrid; rotation: 180 }
-//            }
-
-//            transitions: Transition {
-//                RotationAnimation { duration: 1000; direction: RotationAnimation.Counterclockwise }
-//            }
         }
     }
 }

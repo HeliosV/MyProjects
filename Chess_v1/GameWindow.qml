@@ -42,13 +42,6 @@ ApplicationWindow {
         anchors.fill: parent
         color: "transparent"
 
-        ChessBoard{
-            id: chessBoard
-            width: parent.width
-            height: parent.height
-            anchors.fill: parent
-        }
-
         ChessFigures{
             id: chessFigures
             width: parent.width

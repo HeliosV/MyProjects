@@ -41,7 +41,6 @@ ApplicationWindow {
                 text: qsTr("&Load game")
                 onTriggered: {
                     load();
-                    //loadModel();
                 }
             }
         }
@@ -76,11 +75,6 @@ ApplicationWindow {
                 width: parent.width
                 height: parent.height/1.1
                 color: "transparent"
-                ChessBoard{
-                    id: chessBoard
-                    width: parent.width
-                    height: parent.height
-                }
 
                 ChessFigures{
                     id: chessFigures
